@@ -1,3 +1,205 @@
 body {
-    background-color: red;
-    color: #333333;}
+    background-color: #FFFCF0;
+    color: #302603;
+}
+
+header {
+    background-color: #FCCB1A;
+    font-family: "Exo 2", sans-serif;
+}
+
+footer {
+    background-color: #302603;
+    color: #FCECB6;
+    font-family: "Exo 2", sans-serif;
+    margin-top: 10em;
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-size: 0.6em;
+}
+
+h1{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1.1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "image texte";
+}
+
+.texte{
+    margin-top: 3em;
+    margin-right: 5em;
+}
+
+.maj{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+    font-weight: 500;
+}
+
+.main{
+    font-size: 1.5em;
+    margin-inline: 8em;
+    margin-top: 3em;
+    font-family: "Poppins", sans-serif;
+}
+
+.bio{
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin-bottom: 3em;
+}
+
+h2, h3{
+    font-weight: 900;
+}
+
+ul{
+    list-style: none;
+}
+
+ul.formation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "lim gre mende";
+    gap: 3em;
+    font-size: 0.8em;
+    text-align: justify;
+    margin-right:2em;
+}
+
+ /* Créer la barre verticale entre les éléments de formation*/
+.formation li:nth-child(1), .formation li:nth-child(2){
+    border-right: 1px solid #302603;
+    padding-right: 3em;
+}
+
+.lieu{
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    font-style: italic;
+    color:#756015;
+}
+
+.form{
+    background-color: #F4E7B8;
+    width: 100% !important;
+    padding-block: 1em;
+    margin-bottom: 4em;
+    border-radius: 10px;
+}
+.titre{
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+
+.con1, .con2, .con3{
+    border: 1px solid #302603;
+    background-color: #F7F2D9;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding-block: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase !important;
+    margin-inline: 4em;
+    margin-bottom: 1em;
+}
+
+.langage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    gap: 5em; /* Espace entre les éléments de la grille */
+}
+
+.langues{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.1fr;
+    grid-auto-flow: row;
+    gap: 6em;
+}
+
+.python, .html, .css, .fr, .en{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.im2,.im3,.im4,.im5,.im6{
+    margin-top: 0.7em;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.connaissance{
+    margin-bottom: 5em;
+}
+
+.hobbies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-block: 2em;
+}
+
+.voyage, .musique, .nature, .couture{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.im7, .im8, .im9, .im10{
+    margin-bottom: 1em;
+}
+
+.sous-texte{
+    font-size: 0.85em;
+    font-style: italic;
+    color:#756015;
+    margin-inline: 4em;
+    text-align: justify;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-rows: 1.1fr;
+    justify-items: center;
+    padding-inline: 50em;
+}
+
+.mail:hover, .github:hover{
+    filter: brightness(0) saturate(100%) invert(72%) sepia(88%) saturate(500%) hue-rotate(360deg);
+}
+
+.im11, .im12{
+    justify-content: center;
+    margin-bottom: 2em;
+}
