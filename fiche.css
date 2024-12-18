@@ -8,14 +8,30 @@ header {
     font-family: "Exo 2", sans-serif;
 }
 
-footer {
+.liste {
+  display: flex;
+  justify-content: center;
+  margin-top: 8em;
+}
+
+.liste li {
+  margin-right: 1em;
+}
+
+.liste a {
+  text-decoration: none;/* Enleve le soulignement des liens */
+  color: #302603;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Liens du menu survolés*/
+.liste a:hover {
+    color: #FCCB1A;
     background-color: #302603;
-    color: #FCECB6;
-    font-family: "Exo 2", sans-serif;
-    margin-top: 10em;
-    text-align: center;
-    padding-bottom: 0.5em;
-    font-size: 0.6em;
+    padding: 0.5em;
+    border-radius: 5px;
 }
 
 h1{
@@ -25,7 +41,8 @@ h1{
     text-align: center;
 }
 
-.container {  display: grid;
+.container {  
+    display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1.1fr;
     grid-auto-flow: row;
@@ -202,4 +219,61 @@ h3{
 .im11, .im12{
     justify-content: center;
     margin-bottom: 2em;
+}
+
+.api{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.github-stats{
+    text-align: center;
+    padding: 20px;
+}
+
+.github-stats img {
+    margin: 1.2em;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #302603;
+    color: #FCECB6;
+    font-family: "Exo 2", sans-serif;
+    margin-top: 10em;
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-size: 0.6em;
+}
+
+.tit{
+    font-size: 1em;
+    margin-top: 4em;
+}
+
+h2{
+    text-align: center;
+}
+
+.im13{
+    display: flex;
+    justify-content: center;
+}
+
+.travail{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.travail a{
+    font-weight: bold;
+    color: #809013;
+    text-decoration: none;
+}
+
+.travail a:hover{
+    background-color: #302603;
+    color: #809013;;
+    padding: 0.5em;
+    border-radius: 10px;
 }
