@@ -16,26 +16,32 @@
 <div class="container">
   <div class="image">
     <img 
-    src="photo_cv.png";
+    src="media/photo_cv.png";
     alt="Photo"
-    width="300">
+    width="400">
   </div>
 
   <div class="texte">
     <h1>Zoé VAN DE MOORTELE</h1>
     <p class="maj">-Développeuse web-</p>
+    <ul class="liste">
+      <li><a href=#bio>Biographie</a></li>
+      <li><a href=#form>Formation</a></li>
+      <li><a href=#co>Connaissances</a></li>
+      <li><a href=#hobbies>Mes hobbies</a></li>
+      <li><a href="travaux_precedents.html">Travaux précédents</a></li>
   </div>
 </div>
 </header>
 
 <div class="main">
   <section class="bio">
-    <h2>Biographie</h2> 
+    <h2 id="bio">Biographie</h2> 
       <p>Etudiante en première année de DEUST Webmaster et Métiers de l'Internet à l'université de Limoges. Passionnée par le web et la création numérique, mon but est de concevoir des sites élégants et performants, adaptés à chacun de mes clients, en accord avec leurs demandes, intérets et valeurs.</p>
   </section>
   <div class="details">
     <div class="form">
-      <h3>Formation</h3>
+      <h3 id="form">Formation</h3>
           <ul class="formation">
             <li class="lim">DEUST Webmaster  et Métiers de l'Internet,<br> depuis 2024<br><div class="lieu">Université de Limoges,87000</div></li>
             <li class="gre">Double licence Physique & Musicologie,<br> diplômée en 2024<br><div class="lieu">Université Grenoble Alpes, Grenoble, 38000</div></li>
@@ -43,7 +49,7 @@
           </ul>
     </div>
     <div class="connaissance">
-      <h3>Connaissances</h3>
+      <h3 id="co">Connaissances</h3>
         <ul>
           <li class="con1"><div class="titre">Développement web </div><img src="lordinateur.png" width="70" class="im1"></li>
           <li class="con2"><div class="titre">Langages </div>
@@ -61,8 +67,18 @@
           </li>                                          
         </ul>
     </div>
+
+<!--API GitHub-->
+<section class="api">
+  <h2>Statistiques GitHub</h2>
+  <div class="github-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=vandemooz&show_icons=true&theme=radical" alt="Statistiques GitHub" class="stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vandemooz&layout=compact&theme=radical" alt="Langages les plus utilisés" class="widget">
+  </div>
+</section>
+
     <div>
-      <h3>Mes hobbies</h3>
+      <h3 id="hobbies">Mes hobbies</h3>
         <ul class="hobbies">
           <li class="voyage"><img src="voyage.png" width="70" alt="voyage" class="im7">Voyages<br><div class="sous-texte">Voyage en Espagne, Portugal et Pays-Bas au cours de ces derniers mois.</div></li>
           <li class="musique"><img src="musique.png" width="70" alt="musique" class="im8">Musique <br><div class="sous-texte">Je joue du piano et écoute beaucoup de musique classique, en particulier du XIXe siècle et de l'ère romantique.</div></li> 
